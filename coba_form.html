@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+        <label for="depan">Nama depan:</label><br>
+        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama Belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakan" value="Prawira"><br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+    <p>Jika "Kirim" ditekan , data formulir akan dikirim dan berpindah menuju "/action_page.php".<br></br>
+        Jika tombol reset ditekan, data formulir akan kembali ke budi dan prawira.
+        <br><br>
+        Jika tombol kirim ditekan maka data yang telah diisi akan dikirim ke halaman /action_page.php, namun dikarenakan file action_page.php tidak ada maka"Cannot get action_page.php".
+        <br><br>
+        Ketika ditambahkan atribut target dan diisi _self akan menampilkan halaman yang sama seperti sebelumnya, namun jika _blank maka akan ditampilkan pada tab baru.
+        <br><br>
+        Metode GET mengirimkan data melalui URL, yang terlihat di address bar. Ini dapat digunakan untuk data yang tidak sensitif tetapi memiliki batasan panjang data.<br></br>
+        Metode POST mengirimkan data melalui body request, yang lebih aman untuk data sensitif dan tidak memiliki batasan panjang yang ketat.
+    </p>
+</body>
+</html>

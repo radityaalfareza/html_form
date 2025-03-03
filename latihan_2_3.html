@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16"/>
+</head>
+<body>
+    <div id="header">
+        <h1>Judul/Header Website</h1>
+    </div>
+
+    <div id="main">
+        <div id="link">
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <fieldset>
+                <legend>Form Pendaftaran Mahasiswa Baru</legend>
+                <form>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td><label for="nama">Nama Lengkap</label></td>
+                            <td><input type="text" id="nama" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ttl">Tempat/Tanggal Lahir</label></td>
+                            <td>
+                                <input type="text" id="ttl" name="ttl">
+                                <input style="width: 32px;" type="number" value="1" min="1" max="31"> - <input style="width: 32px;" type="number" value="1" min="1" max="12"> - <input style="width: 48px;" type="number" value="1989" min="1989" max="1994">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="agama">Agama</label></td>
+                            <td>
+                                <select id="agama" name="agama">
+                                    <option>Islam</option>
+                                    <option>Kristen</option>
+                                    <option>Katolik</option>
+                                    <option>Hindu</option>
+                                    <option>Buddha</option>
+                                    <option>Konghucu</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>
+                                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                                <label for="laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ijazah">No. Ijazah SMA/MA</label></td>
+                            <td><input type="text" id="ijazah" name="ijazah"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="foto">Foto (Maks. 20 KB)</label></td>
+                            <td><input type="file" id="foto" name="foto"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ayah">Nama Ayah</label></td>
+                            <td><input type="text" id="ayah" name="ayah"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ibu">Nama Ibu</label></td>
+                            <td><input type="text" id="ibu" name="ibu"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat Rumah</label></td>
+                            <td><textarea id="alamat" name="alamat" rows="7" cols="21"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telp">No. Telp</label></td>
+                            <td><input type="tel" id="telp" name="telp"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sekolah">Nama Sekolah Asal</label></td>
+                            <td><input type="text" id="sekolah" name="sekolah"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat_sekolah">Alamat Sekolah Asal</label></td>
+                            <td><textarea id="alamat_sekolah" name="alamat_sekolah" rows="7" cols="21"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jurusan">Jurusan</label></td>
+                            <td>
+                                <select id="jurusan" name="jurusan">
+                                    <option>Komputerisasi Akuntansi</option>
+                                    <option>Administrasi Bisnis</option>
+                                    <option>Teknik Komputer Kontrol</option>
+                                    <option>Teknik Listrik</option>
+                                    <option>Mesin Otomotif</option>
+                                    <option>Perkeretaapian</option>
+                                    <option>Teknologi Informasi</option>
+                                    <option>Akuntansi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button type="submit">DAFTAR</button>
+                                <button type="reset">BATAL</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+    <div id="footer">
+        <i>copyright@RadityaAlfarezaPurnamaPutra_2443110542025</i>
+    </div>
+</body>
+</html>
